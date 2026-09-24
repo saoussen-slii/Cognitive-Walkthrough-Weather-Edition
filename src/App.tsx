@@ -13,7 +13,7 @@ function App() {
     setLoading(true);
     setError("");
     setWeather(null);
-    const key = import.meta.env.VITE_OPENWEATHER_API_KEY;
+    const key = import.meta.env.OPENWEATHER_API_KEY;
     const endpoint = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(query)}&appid=${key}&units=metric`;
 
     try {
